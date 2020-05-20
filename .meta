@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "www": "git@github.com:CloudNativeEntrepreneur/www.git",
+    "content": "git@github.com:CloudNativeEntrepreneur/content.git"
+  }
+}
