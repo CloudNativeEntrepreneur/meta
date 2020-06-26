@@ -1,2 +1,11 @@
-/www/
+/auth/
+/clusters/cldntventr-dev/dev
+/clusters/cldntventr-dev/staging
+/clusters/cldntventr-dev/production
 /content/
+/demo-app/
+/infrastructure/
+/keycloak-gateway/
+/keycloak-theme/
+/person-model/
+/www/

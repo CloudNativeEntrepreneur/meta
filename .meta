@@ -1,6 +1,15 @@
 {
   "projects": {
+    "auth": "git@github.com:CloudNativeEntrepreneur/auth.git",
+    "clusters/cldntventr-dev/dev": "git@github.com/CloudNativeEntrepreneur/environment-cldntventr-dev.git",
+    "clusters/cldntventr-dev/production": "git@github.com/CloudNativeEntrepreneur/environment-cldntventr-production.git",
+    "clusters/cldntventr-dev/staging": "git@github.com/CloudNativeEntrepreneur/environment-cldntventr-staging.git",
+    "content": "git@github.com:CloudNativeEntrepreneur/content.git",
+    "demo-app": "git@github.com:CloudNativeEntrepreneur/demo-app.git",
+    "infrastructure": "git@github.com:CloudNativeEntrepreneur/infrastructure.git",
+    "keycloak-gateway": "git@github.com:CloudNativeEntrepreneur/keycloak-gateway.git"
+    "keycloak-theme": "git@github.com:CloudNativeEntrepreneur/keycloak-theme.git"
+    "person-model": "git@github.com:CloudNativeEntrepreneur/person-model.git",
     "www": "git@github.com:CloudNativeEntrepreneur/www.git",
-    "content": "git@github.com:CloudNativeEntrepreneur/content.git"
   }
 }
