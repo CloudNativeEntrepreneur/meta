@@ -106,6 +106,27 @@ services:
 
 # Services
 
+  content:
+    build:
+      context: ./content
+      dockerfile: Dockerfile
+    env_file: clusters/cldntventr-dev/infrastructure/secret/local/content.env
+    environment: 
+      CORS_ORIGIN: http://localhost:3000
+    ports:
+      - "3001:3001"
+
+  www:
+    build:
+      context: ./www
+      dockerfile: Dockerfile
+    env_file: clusters/cldntventr-dev/infrastructure/secret/local/www.env
+    environment: 
+      SAPPER_SERVER_CONTENT_GRAPHQL_URL: http://content:3001/graphql
+      SAPPER_CLIENT_CONTENT_GRAPHQL_URL: http://localhost:3001/graphql
+    ports:
+      - "3000:3000"
+
   person-model:
     build:
       context: ./person-model

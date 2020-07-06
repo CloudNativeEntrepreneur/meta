@@ -9,13 +9,12 @@ onboard:
 	&& make install-tools \
 	&& make onboard-jx
 
-first-run:
-	npm ci \
-	&& make clean-install
+start:
+	make clean-install \
+	&& make up-d
 
 restart:
-	npm i \
-	&& make down \
+	make down \
 	&& make up
 
 build:
