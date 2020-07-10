@@ -7,7 +7,8 @@ OS := $(shell uname)
 onboard:
 	make ensure-gcloud-project \
 	&& make install-tools \
-	&& make onboard-jx
+	&& make onboard-jx \
+	&& make copy-secrets
 
 start:
 	make clean-install \
@@ -61,3 +62,9 @@ up:
 
 up-d:
 	docker-compose -f docker-compose.yml up -d
+
+copy-secrets:
+	cd clusters/$(CLUSTER_NAME)/infrastructure && \
+	./scripts/decrypt.sh
+	cp clusters/$(CLUSTER_NAME)/infrastructure/secret/local/content.env ./content/.env
+	cp clusters/$(CLUSTER_NAME)/infrastructure/secret/local/www.env ./www/.env
