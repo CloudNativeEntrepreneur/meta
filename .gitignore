@@ -1,3 +1,4 @@
+.DS_Store
 /auth/
 /clusters/cldntventr-dev/dev
 /clusters/cldntventr-dev/infrastructure/
@@ -9,3 +10,5 @@
 /keycloak-theme/
 /person-model/
 /www/
+/stripe/prod/
+/stripe/test/

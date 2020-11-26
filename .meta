@@ -10,6 +10,8 @@
     "keycloak-gateway": "git@github.com:CloudNativeEntrepreneur/keycloak-gateway.git",
     "keycloak-theme": "git@github.com:CloudNativeEntrepreneur/keycloak-theme.git",
     "person-model": "git@github.com:CloudNativeEntrepreneur/person-model.git",
-    "www": "git@github.com:CloudNativeEntrepreneur/www.git"
+    "www": "git@github.com:CloudNativeEntrepreneur/www.git",
+    "stripe/prod": "git@github.com:CloudNativeEntrepreneur/stripe-prod-terraform.git",
+    "stripe/test": "git@github.com:CloudNativeEntrepreneur/stripe-test-terraform.git"
   }
 }
